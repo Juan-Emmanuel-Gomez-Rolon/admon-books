@@ -1,14 +1,36 @@
 # admon-books
-Code challenge
+Este proyecto usa Node versión 18.17.1
+Frameworks y librerías: React y Express
+
+# Como correr el proyecto
 El proyecto esta dividido en 2 partes frontend y backend
-npm i
-Después de correr la página
-npm run dev
-backend
-Para ejecutar el proyecto estos son los pasos: ingresar a la carpeta de backend 
+
+### Frontend
+Para correr el proyecto estos son los pasos:
+ingresar a la carpeta de frontend
 En la consola escribir lo siguiente para instalar los paquetes
+```sh
 npm i
-Después necesitas tener en tu .env esta variable, si no la tienes debes crearla en la raíz del backend, despues copias y pegas el siguiente comando y lo guardas DATABASE_URL="file:./dev.db" Al tenerla en dicha variable se necesita correr las migraciones para eso corremos el comando
-npx prisma generate dev
-Y para que el servidor inicie corremos el comando
+```
+Después para correr la página
+```sh
 npm run dev
+```
+
+### Backend
+Para correr el proyecto estos son los pasos:
+ingresar a la carpeta de backend
+En la consola escribir lo siguiente para instalar los paquetes
+```sh
+npm i
+```
+Después necesitas tener en tu .env esta variable si no la tienes debes creearla en la raíz de backend
+DATABASE_URL="file:./dev.db"
+Al tenerla se necesita correr las migraciones para eso corremos el comando
+```sh
+npx prisma generate dev
+```
+Y para que el servidor inicie corremos el comando
+```sh
+npm run dev
+```
