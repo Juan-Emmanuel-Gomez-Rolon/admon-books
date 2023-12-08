@@ -24,15 +24,9 @@ En la consola escribir lo siguiente para instalar los paquetes
 ```sh
 npm i
 ```
-<<<<<<< HEAD
-Después necesitas tener en tu .env esta variable
-DATABASE_URL="file:./dev.db"
-Al tenerla en se necesita correr las migraciones para eso corremos el comando
-=======
 Después necesitas tener en tu .env esta variable si no la tienes debes creearla en la raíz de backend
 DATABASE_URL="file:./dev.db"
 Al tenerla se necesita correr las migraciones para eso corremos el comando
->>>>>>> 2a573650db73ace40b905e337d60dff60f18373a
 ```sh
 npx prisma generate dev
 ```
